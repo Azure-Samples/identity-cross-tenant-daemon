@@ -1,3 +1,16 @@
+---
+page_type: sample
+languages:
+- csharp
+products:
+- azure
+- aspnet-core
+- identity-and-access
+name: "Cross Tenant Daemon App Using Microsoft Identity Platform"
+description: "This sample shows how an ISV can create a SaaS app where customers can sign-up to for the app and the app can access customer data in a long-running and non-interactive way, providing that the customer provides their consent to access this data."
+
+---
+
 # Cross Tenant Daemon App Using Microsoft Identity Platform
 
 ## About this sample
