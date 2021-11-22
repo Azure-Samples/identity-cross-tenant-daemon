@@ -1,0 +1,24 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model LandingPage.Pages.WelcomeModel
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>A Service Principal have been created in your Azure AD Tenant with this tenant id: <b>@Model.TenantId</b></p>
+    <p>Press the <b>Assign App Role</b> button to add the '@Model.Permission' application permission to the service principal. <a href="https://docs.microsoft.com/en-us/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0&tabs=http">See more in the documentation</a>.</p>
+
+    <p></p>
+
+    <form method="post">
+        <div>    
+            <input type="submit"
+                   value="Assign App Role"
+                   class="btn btn-primary"
+                   asp-page-handler="AppRoleAssignment"/>
+        </div>
+    </form>
+
+</div>

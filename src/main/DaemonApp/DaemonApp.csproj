@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Graph" Version="4.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\landingPage\appsettings.Development.json" Link="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="..\landingPage\Options\AzureAdOptions.cs" Link="\Options\AzureAdOptions.cs" />
+    <Compile Include="..\landingPage\Options\MSGraphOptions.cs" Link="\Options\MSGraphOptions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="daemonAppSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

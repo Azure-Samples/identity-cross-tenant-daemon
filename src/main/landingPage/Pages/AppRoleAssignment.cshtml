@@ -1,0 +1,19 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model LandingPage.Pages.AppRoleAssignmentModel
+@{
+    ViewData["Title"] = "App Role Assignment";
+}
+
+<div>
+    @{
+        if(@Model.IsRoleAssigned)
+        {
+            <p>App Role successfully assigned.</p>
+        }
+        else
+        {
+            <p>App Role already existed.</p>
+        }
+    }
+</div>
