@@ -1,0 +1,28 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sign Up</h1>
+    <p> To complete the sign up process for this SaaS app you will need administrative priviliges on you Azure home tenant.</p>
+    <p> When you press the sign-up button you will be asked to sign into your home tenant so a service principal can be created there, if it has not already been so. </p>
+
+    <div>
+        <form method="post">
+        <div>    
+            <input type="submit"
+                   value="Sign up"
+                   class="btn btn-primary"
+                   asp-page-handler="SignUp"/>
+        </div>
+        </form>
+    </div>
+    <div>
+        <p><b>Note</b>: You will be able to locate the service principal in 'Enterprise application' in Azure Active Directory in the Azure Portal.</p>
+    </div>
+
+
+</div>
