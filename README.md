@@ -55,7 +55,7 @@ To run this sample you'll need:
 From your shell or command line:
 
 ```
-git clone https://github.com/Azure-Samples/ms-identity-cross-tenant-daemon.git
+git clone https://github.com/Azure-Samples/identity-cross-tenant-daemon.git
 ```
 
 ... or download and exact the repository .zip file.
