@@ -40,7 +40,7 @@ The daemon app will need the following settings to run:
 
 With these settings the daemon app is now able to use the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview) to get an access token that can be used for for accessing the desired customer data.  
 
-Notice that no client secrets (or certificates) need to be exchanged between the ISV and the customer for running the daemon app. This makes the approach secure and easy to manage for ISVs. Additionally, the customer remains in control, as the the custom can at any time delete the service principal for the app in the customers own tenant, which will revoke the daemon app's access and permissions.
+Notice that no client secrets (or certificates) need to be exchanged between the ISV and the customer for running the daemon app. This makes the approach secure and easy to manage for ISVs. Additionally, the customer remains in control, as the customer can at any time delete the service principal for the app in the customers own tenant, which will revoke the daemon app's access and permissions.
 
 ### How to run this sample
 
